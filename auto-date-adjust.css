@@ -1,0 +1,223 @@
+@charset "utf-8";
+/* Basic */
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+* html .cf { zoom: 1; }
+*:first-child+html .cf { zoom: 1; }
+html { margin: 0; padding: 0; }
+body { font-size: 100%; margin: 0; padding: 1.75em; font-family: 'Helvetica Neue', Arial, sans-serif; }
+h1 { font-size: 1.75em; margin: 0 0 0.6em 0; }
+a { color: #2996cc; }
+a:hover { text-decoration: none; }
+p { line-height: 1.5em; }
+.small { color: #666; font-size: 0.875em; }
+.large { font-size: 1.25em; }
+section.block { display: block; clear: both; padding: 30px 0; width: 100%; border: 0; border-top: 2px solid #ddd; border-bottom: 2px solid #ddd; }
+a, .a { text-decoration:none; }
+a:hover, .a:hover { text-decoration:none; }
+body::-webkit-scrollbar {
+width: 6px; }
+body::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+box-shadow: inset 0 0 6px rgba(0,0,0,0.3); }
+body::-webkit-scrollbar-thumb {
+background-color: rgba(51, 68, 84, 0.91);
+outline: 1px solid #334454; }
+/* jQuery UI */
+.ui-widget { background: rgba(0, 0, 0, 0.3); padding: 5px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+/* datepicker */
+.ui-datepicker { width: 230px; z-index: 1000; }
+.ui-datepicker-inline.ui-datepicker { width: 100%; float: left; margin-top: 10px; padding: 0px; background: transparent; }
+.ui-datepicker .ui-widget-header { padding: 5px 0px; background: #2f9fe0; }
+.ui-datepicker .ui-datepicker-title { font-size: 12px; font-weight: bold; color: #FFF; }
+.ui-datepicker .ui-datepicker-title .ui-datepicker-year { font-weight: normal; }
+.ui-datepicker table { margin: 0px; background: #FFF; }
+.ui-datepicker-multi-3 .ui-datepicker-group { width: 33%; padding-right: 1px; }
+.ui-datepicker-multi-3 .ui-datepicker-group-last { padding-right: 0px; width: 34%; }
+.ui-datepicker-multi .ui-datepicker-group table { width: 100%; margin: 0px auto; }
+.ui-datepicker-group-first table { float: left; }
+.ui-datepicker-group-last table { float: right; }
+.ui-datepicker th { background: #e5e5e5; }
+.ui-datepicker td { padding: 0px; border-right: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; line-height: 28px; }
+.ui-datepicker td span, .ui-datepicker td a { padding: 5px; height: 28px; color: #333; font-weight: bold; }
+.ui-datepicker td a.ui-priority-secondary { color: #888; }
+.ui-datepicker td a.ui-state-hover { background: #e1f1fa; color: #2f9fe0; -webkit-transition: all 100ms; -moz-transition: all 100ms; transition: all 100ms; }
+.ui-datepicker td a.ui-state-highlight { background: #e5e5e5; color: #333; }
+.ui-datepicker td a.ui-state-active { background: #2f9fe0; color: #FFF; }
+.ui-datepicker tr td:last-child { border-right: 0px; }
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next { width: 20px; height: 20px; top: 5px; cursor: pointer; }
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-prev-hover { left: 3px; }
+.ui-datepicker .ui-datepicker-next, .ui-datepicker .ui-datepicker-next-hover { right: 3px; }
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { display: none; }
+.ui-datepicker .ui-datepicker-prev:before, .ui-datepicker .ui-datepicker-next:before { font-size: 11px; color: #1974a9; line-height: 22px; height: 20px; width: 20px; text-align: center; }
+.ui-datepicker .ui-datepicker-prev:before { position: absolute; content: "\f053"; font-family: "FontAwesome"; left: 0px; }
+.ui-datepicker .ui-datepicker-next:before { position: absolute; content: "\f054"; font-family: "FontAwesome"; right: 0px; }
+.ui-datepicker .ui-datepicker-prev-hover.ui-datepicker-prev:before { color: #FFF; -webkit-transition: color 100ms ease-in; -moz-transition: color 100ms ease-in; transition: color 100ms ease-in; }
+.ui-datepicker .ui-datepicker-next-hover.ui-datepicker-next:before { color: #FFF; -webkit-transition: color 100ms ease-in; -moz-transition: color 100ms ease-in; transition: color 100ms ease-in; }
+/* eof datepicker */
+/* timepicker */
+.ui-timepicker-div { background: #FFF; float: left; width: 100%; }
+.ui-timepicker-div dl { margin: 0px; padding: 10px 5px; width: 100%; float: left; }
+.ui-timepicker-div dl dt, .ui-timepicker-div dl dd { margin-bottom: 5px; float: left; width: 30%; line-height: 20px; height: 20px; }
+.ui-timepicker-div dl dd { width: 70%; }
+.ui-timepicker-div .ui_tpicker_time { font-weight: bold; font-size: 12px; }
+.ui_tpicker_second, .ui_tpicker_millisec_label, .ui_tpicker_millisec, .ui_tpicker_microsec, .ui_tpicker_timezone_label, .ui_tpicker_timezone { display: none; }
+.ui-datepicker .ui-datepicker-buttonpane button { display: inline-block; background-color: #fff; margin-bottom: 0; font-size: 12px; font-weight: 400; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-image: none; border: 1px solid transparent; border-radius: 4px; }
+/* eof timepicker */
+/* slider */
+.ui-slider { height: 10px; padding: 0px; background: #FFF; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #D5D5D5; margin: 5px 10px 5px 5px; }
+.ui-slider .ui-slider-handle { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; background: #FFF; border: 3px solid #2f9fe0; height: 20px; width: 20px; top: -6px; margin-left: -5px; cursor: pointer; }
+.ui-slider .ui-slider-handle.ui-state-active, .ui-slider .ui-slider-handle.ui-state-hover { background: #e1f1fa; }
+.ui-slider-range { background: #e1f1fa; }
+.ui-slider-vertical .ui-slider-handle { top: auto; left: -1px; }
+/* eof slider */
+/* Basic Extra */
+ol.dd-list { margin:0; padding:0; list-style: none; }
+.input { position:relative; margin-bottom: 1rem; }
+.input input { border: none; box-shadow: none; border-bottom: .1rem solid #e7e7e7;
+ padding: .1rem 0;
+height: 2rem; line-height: 2rem; width:100%; }
+.search-icon { position: absolute; right: 1rem; top: 0; padding: 0 .2rem !important;
+-webkit-transform: translateZ(0); transform: translateZ(0); width: 2rem; height: 2rem; font-size: 1.5rem; line-height: 1rem; text-align: right; }
+.mtg-reveal-modal { position: relative; }
+.mtg-reveal-modal .close-reveal-modal { font-size: 1.5rem; line-height: 1; position: absolute; top: 0.5rem; right: 0.6875rem; color: #aaaaaa; font-weight: bold; cursor: pointer; height: 3rem; width: 2rem; text-align: right; text-decoration: none; }
+.mtg-label-radio { display: inline-block; padding-left: 20px; margin-bottom: 0; font-weight: 400; vertical-align: middle; cursor: pointer; position: relative; padding-left: 25px; margin-top: 0px; min-height: 20px; margin-bottom: 5px; }
+.mtg-label-radio > label { min-height: 20px; padding-left: 20px; margin-bottom: 0; font-weight: 400; cursor: pointer; line-height: 20px; }
+.mtg-label-radio > label > div.mtg-blue-radio { display: block; margin: 0; padding: 0; width: 20px; height: 20px; background: url("../img/blue.png") no-repeat; border: 0; cursor: pointer; position: absolute; left: 0; top: 0; background-position: -88px 0; }
+.mtg-label-radio > label > div.mtg-blue-radio.checked { background-position: -110px 0; }
+.mtg-label-radio > label > div.mtg-blue-radio > input { position: absolute; opacity: 0; margin-top: 4px; margin-left: -20px; }
+.mtg-label-radio > label > div.mtg-blue-radio > ins.iCheck-helper { position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255); }
+/* Edit Date PopUp */
+.modal-dialog { width:700px; }
+.modal-body { margin:0; }
+.moving-down-arrow.animated, .moving-up-arrow.animated { -webkit-animation-duration: 2s; animation-duration: 2s; }
+.moving-down-arrow, .moving-up-arrow { position: absolute; right:-50px; top: 50%; height:100px; margin-top:-50px; width:20px; z-index: 10000; display:none; }
+.moving-down-arrow::after, .moving-up-arrow::after { font-family: 'fontawesome'; height:90px; width:20px; display:block; position:absolute; top: 0px; right: 0px; color: rgba(0, 0, 0, 0.74); font-size: 80px; }
+.moving-down-arrow::after { content: "\f175"; }
+.moving-up-arrow::after { content:"\f176"; }
+.edit-date-card { max-height: 68vh; overflow-y: scroll; padding:2px 6px; margin-top: -6px; }
+.edit-date-card::-webkit-scrollbar {
+width: 4px; }
+.edit-date-card::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3); }
+ .edit-date-card::-webkit-scrollbar-thumb {
+background-color: rgba(51, 68, 84, 0.91);
+outline: 1px solid #334454; }
+.edit-date-card a.date-group { font-size: 16px; font-weight: 600; padding-bottom: 10px; display: block; }
+.cardHolder { width: 100%; display: block; height: 112px; padding: 9px 0; margin-bottom: 10px !important; border: 1px solid rgba(255, 255, 255, 0.66); box-shadow: 0 0 5px #D0D0D0; }
+.dd-placeholder { position:relative; background-color: #fff; border: 1px dashed #BEBEBE; }
+.dd-placeholder::before { content: "\f0dd"; height:10px; width:10px; display:block; position:absolute; left:0; top:-10px; color: #ff0000; font-family: fontawesome; font-size: 13px; vertical-align: top; line-height: 0px; }
+.cardHolderImage { width: 100%; height: 90px; overflow: hidden; border: 4px solid transparent; box-shadow: 0 0 2px #999; }
+.cardHolder .btn i { padding-right:10px; }
+.cardHolder button.date-set em, .cardHolder button.time-set em { font-style:normal; }
+.cardHolder .card-delete i { padding:0; font-size:14px; }
+.dd-item, .dd-empty, .dd-placeholder { min-height: 112px; position: relative; margin-bottom:15px; }
+.dd-dragel { position: absolute; pointer-events: none; z-index: 9999; }
+.dd-dragel > .dd-item .dd-handle { margin-top: 0; }
+.dd-dragel .dd-handle { }
+.dd3-handle { position: absolute; margin: 0; left: 0; top: 0; cursor: pointer; width: 35px; min-height:58px; text-indent: 100%; white-space: nowrap; overflow: hidden; border: none; z-index: 1; background-color:transparent; transition:.3s; -webkit-transition:.3s; padding:0; }
+.dd3-handle:before { content: "\f0b2"; font-family: "FontAwesome"; display: block; position: absolute; left: 5px; top: 16px; width: 100%; text-align: center; text-indent: 0; color: #3864A5; font-size: 16px; font-weight: normal; visibility:hidden; }
+.dd3-handle:hover { color: #2f9fe0; background: none; }
+.dd3-handle { left:inherit; right:0; width: 100%; }
+.dd3-handle::before { right: 0px; left: initial; width: 30px; }
+.dd3-content { display: block; height: 112px; margin: 5px 0 !important; padding:10px 0px; border: 0px solid #e5e5e5; text-decoration: none; box-sizing: border-box; -moz-box-sizing: border-box; }
+.dd3-content:hover { color: #2ea8e5; background: #fff; }
+.dd3-content .form-control { background-color: rgba(74, 190, 255, 0.02); padding: 2px; font-size: 14px; border-color: #45BDFF; }
+.dd3-content .form-control::-webkit-input-placeholder {
+color: #444; }
+.dd3-content .form-control:-moz-placeholder {
+color: #444; }
+.dd3-content .form-control::-moz-placeholder {
+color: #444; }
+.dd3-content .form-control:-ms-input-placeholder {
+color: #444; }
+.dd3-content .form-control[disabled] { background-color: transparent; border-color:transparent; color:#666; padding: 2px; font-size: 14px; cursor:default; text-align:right; }
+.cardHolder.dd3-content { height: 112px; background-color:#fff; }
+.dd3-content:hover { color: inherit; }
+.cardHolder .spe-date, .cardHolder .spe-time, .cardHolder .gen-date, .cardHolder .gen-time, .date-group-select .gen-date-group, .date-group-select .spe-date-group { margin-left: -25px; padding-left: 30px; width: 110px; z-index: 999; width: 100px; }
+.dd3-item:hover .dd3-handle::before { visibility:visible; }
+.dd3-content .form-control[disabled] { text-align:left; }
+.date-select, .time-select { margin-top: 10px; background-color: #fff; display:none; }
+.date-select .input-group-btn, .time-select .input-group-btn { font-size: 14px; position: absolute; right: 20px; top:6px; z-index: 1046; }
+input.generic-date-input, input.specific-date-input, input.generic-time-input, input.specific-time-input { border-color: #ECECEC !important; background-color: rgba(255, 255, 255, 1) !important; line-height: 18px !important; z-index:1045 !important; }
+.search-icon { right:0px; visibility:hidden; width: 140px; }
+.search-icon:hover .input input { border-bottom: .1rem solid #f90; }
+.generic-date-input ~ ul.dropdown-menu, .generic-date-group-input ~ ul.dropdown-menu {
+max-height: 150px;
+overflow-y: scroll; }
+.btn.date-set.btn-default, .btn.time-set.btn-default { background-color: #F0F0F0; border-color: #D1D1D1; }
+.date-group-select { height:32px; }
+.date-group-select > section { display:none; }
+.date-group-select .input-group-btn { font-size: 14px; position: absolute; right: 20px; top:6px; z-index: 1046; }
+#nestableSample { display: none; }
+.date-group-select .input-group, .date-group-select .form-control.specific-date-input { width: 100% !important; }
+.date-group-select input[disabled] { background-color:#fff; }
+/* Contant Starts */
+.page-container .page-content { margin-top:110px; }
+.before-visible:before { visibility: visible; }
+@media (max-width: 992px) {
+#mtgEditdate .modal-dialog { width: 500px; margin-left: auto; }
+.mtg-first-time-animation .mtg-animation-ok { width: 472px; margin-left: -245px; }
+.mtg-animation-ok span h6 { font-size: 14px; line-height: 21px; }
+.padding-r-sm { padding-right:15px; }
+.padding-l-sm { padding-left: 15px; } }
+/* Animation CSS Document */
+.animated { -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; }
+@-webkit-keyframes slideOutUp { 0% { -webkit-transform: translateY(0);
+ transform: translateY(0); }
+ 100% { visibility: hidden;
+ -webkit-transform: translateY(-100%);
+ transform: translateY(-100%); } }
+ @keyframes slideOutUp { 0% { -webkit-transform: translateY(0);
+ transform: translateY(0); }
+ 100% { visibility: hidden;
+ -webkit-transform: translateY(-100%);
+ transform: translateY(-100%); } }
+.slideOutUp { -webkit-animation-name: slideOutUp; animation-name: slideOutUp; }
+@-webkit-keyframes slideOutDown { 0% { -webkit-transform: translateY(0);
+ transform: translateY(0); }
+ 100% { visibility: hidden;
+ -webkit-transform: translateY(100%);
+ transform: translateY(100%); } }
+ @keyframes slideOutDown { 0% { -webkit-transform: translateY(0);
+ transform: translateY(0); }
+ 100% { visibility: hidden;
+ -webkit-transform: translateY(100%);
+ transform: translateY(100%); } }
+.slideOutDown { -webkit-animation-name: slideOutDown; animation-name: slideOutDown; }
+ @-webkit-keyframes fadeOutDown { 0% { opacity: 1; }
+ 100% { opacity: 0;
+ -webkit-transform: translate3d(0, 100%, 0);
+ transform: translate3d(0, 100%, 0); } }
+ @keyframes fadeOutDown { 0% { opacity: 1; }
+ 100% { opacity: 0;
+ -webkit-transform: translate3d(0, 100%, 0);
+ transform: translate3d(0, 100%, 0); } }
+.fadeOutDown { -webkit-animation-name: fadeOutDown; animation-name: fadeOutDown; }
+@-webkit-keyframes fadeOutUp { 0% { opacity: 1; }
+ 100% { opacity: 0;
+ -webkit-transform: translate3d(0, -100%, 0);
+ transform: translate3d(0, -100%, 0); } }
+ @keyframes fadeOutUp { 0% { opacity: 1; }
+ 100% { opacity: 0;
+ -webkit-transform: translate3d(0, -100%, 0);
+ transform: translate3d(0, -100%, 0); } }
+.fadeOutUp { -webkit-animation-name: fadeOutUp; animation-name: fadeOutUp; }
+.animated.flipOutX, .animated.flipOutY { -webkit-animation-duration: .75s; animation-duration: .75s; }
+ @-webkit-keyframes flipOutX { 0% { -webkit-transform: perspective(400px);
+ transform: perspective(400px); }
+ 30% { -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+ transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+ opacity: 1; }
+ 100% { -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+ transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+ opacity: 0; } }
+ @keyframes flipOutX { 0% { -webkit-transform: perspective(400px);
+ transform: perspective(400px); }
+ 30% { -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+ transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+ opacity: 1; }
+ 100% { -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+ transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+ opacity: 0; } }
+.flipOutX { -webkit-animation-name: flipOutX; animation-name: flipOutX; -webkit-backface-visibility: visible !important; backface-visibility: visible !important; }
